@@ -23,5 +23,6 @@
         <Button x:Name="ForwardBtn">Вперед</Button>
         </StackPanel>
         <TextBlock x:Name="TitleTb" Grid.Column="1">Школа языков "Леарн"</TextBlock>
+        <Frame Grid.Row="1" Grid.Column="1" x:Name="MainFrame"></Frame>
     </Grid>
 </Window>

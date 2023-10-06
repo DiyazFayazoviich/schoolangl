@@ -1,5 +1,7 @@
-﻿using System;
+﻿using schoolangl.Pages;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,15 @@ namespace schoolangl
         public MainWindow()
         {
             InitializeComponent();
+            //var path = @"C:\Users\212104\Desktop\";
+            //foreach (var item in App.db.Service.ToArray())
+            //{
+            //    var fullPath = path + item.MainImagePath;
+            //    item.MainImage = File.ReadAllBytes(fullPath);
+
+            //}
+            //App.db.SaveChanges();
+            MainFrame.Navigate(new ServiceListPage());
         }
     }
 }
