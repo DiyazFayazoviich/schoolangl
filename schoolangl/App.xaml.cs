@@ -15,5 +15,6 @@ namespace schoolangl
     public partial class App : Application
     {
         public static AshmarinschoolEntities db = new AshmarinschoolEntities();
+        public static bool isAdmin = false;
     }
 }

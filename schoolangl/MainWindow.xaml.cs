@@ -33,7 +33,24 @@ namespace schoolangl
 
             //}
             //App.db.SaveChanges();
-            MainFrame.Navigate(new ServiceListPage());
+            MainFrame.Navigate(new AutorizatePage());
+        }
+
+        private void BackBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainFrame.CanGoBack)
+            {
+                MainFrame.GoBack();
+                MainFrame.RemoveBackEntry();
+            }
+            
+        }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            App.isAdmin = false;
+            MainFrame.Navigate(new AutorizatePage());
+
         }
     }
 }
